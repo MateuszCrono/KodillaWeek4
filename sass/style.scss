@@ -1,1 +1,39 @@
+/* Global */
+
+body {
+    box-sizing: border-box;
+
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Navigation */
+
+nav {
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.left-navbar {
+    color: goldenrod;
+    font-size: 120px;
+}
+
+/* Splash */
+
+.splash {
+    color: white;
+    h1 {
+        font-size 72px;
+    }
+    h2 {
+        font-size 56px;
+    }
+    button {
+        font-size: 50px;
+    }
 }
