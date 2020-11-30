@@ -11,6 +11,7 @@ body {
 
 /* Navigation */
 
+
 nav {
     max-width: 1140px;
     display: flex;
@@ -18,20 +19,31 @@ nav {
     flex-direction: row;
     margin: 0 auto;
     padding: 20px;
+    background-image: url("images/background-image.png);
 }
 
 .left-navbar {
     color: goldenrod;
     font-size: 32px;
-
+    text-align: left;
+}
+.left-navbar i {
+    text-align: left;
 }
 
-.right-navbar {
+.right-navbar ul {
     text-decoration: none;
     text-transform: uppercase;
+    list-style-type: none;
     font-size: 32px;
-    display: block;
+    display: flex;  
+}
 
+.right-navbar ul li {
+    padding: 0 15px;
+    margin: 0 5px;
+    justify-content: space-between; 
+    text-align: right;
 }
 
 /* Splash */
@@ -39,6 +51,8 @@ nav {
 .splash {
     color: white;
     background-color: aquamarine;
+    text-align; center; 
+    margin: auto;
 }
 .splash h1 {
         font-size: 72px;
@@ -49,3 +63,18 @@ nav {
 .splash button {
         font-size: 50px;
     }
+.splash-inside {
+    translate: transofm (-50%,50%);
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.splash button {
+    color: white;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 2px solid 5px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
