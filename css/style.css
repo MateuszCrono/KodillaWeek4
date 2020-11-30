@@ -2,7 +2,6 @@
 
 body {
     box-sizing: border-box;
-
 }
 
 *, *::before, *::after {
@@ -11,24 +10,28 @@ body {
 
 /* Navigation */
 
+header {
+    background-image: url("../images/Background-image.png");
+    max-width: 1140px;
+    margin: auto;
+}
 
 nav {
-    max-width: 1140px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0 auto;
-    padding: 20px;
-    background-image: url("images/background-image.png);
+    padding: 10px;
 }
 
 .left-navbar {
     color: goldenrod;
     font-size: 32px;
-    text-align: left;
 }
 .left-navbar i {
     text-align: left;
+    margin-left: auto;
 }
 
 .right-navbar ul {
@@ -36,13 +39,14 @@ nav {
     text-transform: uppercase;
     list-style-type: none;
     font-size: 32px;
-    display: flex;  
+    display: flex;
+    color: white;  
 }
 
 .right-navbar ul li {
-    padding: 0 15px;
+    padding: 0 5px;
     margin: 0 5px;
-    justify-content: space-between; 
+    justify-content: flex-end; 
     text-align: right;
 }
 
@@ -50,7 +54,6 @@ nav {
 
 .splash {
     color: white;
-    background-color: aquamarine;
     text-align; center; 
     margin: auto;
 }
