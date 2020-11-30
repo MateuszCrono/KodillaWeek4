@@ -1,5 +1,7 @@
 /* Global */
 
+
+
 body {
     box-sizing: border-box;
 }
@@ -12,42 +14,47 @@ body {
 
 header {
     background-image: url("../images/Background-image.png");
-    max-width: 1140px;
-    margin: auto;
+    max-width: 1424px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 
 nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 0 auto;
-    padding: 10px;
+    padding: 10px
 }
 
-.left-navbar {
-    color: goldenrod;
-    font-size: 32px;
+.brand {
+    color: #fed136;   
 }
-.left-navbar i {
+.brand i {
     text-align: left;
-    margin-left: auto;
+    font-size: 26px;
+    padding: 0 5px;
+    margin: 0 25px; 
 }
 
-.right-navbar ul {
+.navbar ul {
     text-decoration: none;
     text-transform: uppercase;
     list-style-type: none;
-    font-size: 32px;
     display: flex;
-    color: white;  
+    color: white;
+    justify-content: space-between;
+
 }
 
-.right-navbar ul li {
+.navbar ul li {
     padding: 0 5px;
     margin: 0 5px;
-    justify-content: flex-end; 
     text-align: right;
+    font-size: 14px;
+    justify-content: flex-end;
 }
 
 /* Splash */
@@ -55,16 +62,20 @@ nav {
 .splash {
     color: white;
     text-align; center; 
-    margin: auto;
+    margin-bottom: 150px;
+    justify-content: center;
 }
 .splash h1 {
-        font-size: 72px;
+        font-size: 75px;
+        border: 2px solid 5px;
+        text-align: center;
     }
 .splash h2 {
-        font-size: 56px;
+        font-size: 40px;
+        border: 2px solid 5px;
     }
 .splash button {
-        font-size: 50px;
+        font-size: 40px;
     }
 .splash-inside {
     translate: transofm (-50%,50%);
@@ -74,10 +85,26 @@ nav {
 
 .splash button {
     color: white;
-    background-color: yellow;
+    background-color:#fed136;
     border-radius: 5px;
     border: 2px solid 5px;
-    padding: 10px;
-    font-size: 20px;
-    margin: 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;   
+}
+
+.splash button:hover {
+    cursor: pointer;
+    border: black;
+}
+
+/* Portfolio */
+
+.portfolio {
+    max-width: 1424px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
 }
