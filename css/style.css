@@ -17,6 +17,7 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .left-navbar {
@@ -29,6 +30,8 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 32px;
+    display: block;
+
 }
 
 /* Splash */
@@ -36,13 +39,13 @@ nav {
 .splash {
     color: white;
     background-color: aquamarine;
-    h1 {
+}
+.splash h1 {
         font-size: 72px;
     }
-    h2 {
+.splash h2 {
         font-size: 56px;
     }
-    button {
+.splash button {
         font-size: 50px;
     }
-}
