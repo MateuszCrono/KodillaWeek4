@@ -16,11 +16,19 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 0 auto;
 }
 
 .left-navbar {
     color: goldenrod;
-    font-size: 120px;
+    font-size: 32px;
+
+}
+
+.right-navbar {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 32px;
 }
 
 /* Splash */
@@ -29,10 +37,10 @@ nav {
     color: white;
     background-color: aquamarine;
     h1 {
-        font-size 72px;
+        font-size: 72px;
     }
     h2 {
-        font-size 56px;
+        font-size: 56px;
     }
     button {
         font-size: 50px;
