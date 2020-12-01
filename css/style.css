@@ -4,6 +4,7 @@
 
 body {
     box-sizing: border-box;
+    height: 100%;
 }
 
 *, *::before, *::after {
@@ -16,45 +17,50 @@ header {
     background-image: url("../images/Background-image.png");
     max-width: 1424px;
     margin: 0 auto;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 20px;
 }
-
-
 nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 10px
+    padding: 10px;
+    justify-content: space-between;
 }
 
 .brand {
-    color: #fed136;   
+    color: #fed136;
+    padding: 10px 0 25px 0;  
+    font-family: 'Dancing Script', cursive;
 }
 .brand i {
     text-align: left;
     font-size: 26px;
-    padding: 0 5px;
-    margin: 0 25px; 
+    padding: 0 0 0 50px;
 }
 
-.navbar ul {
+.topnav {
     text-decoration: none;
     text-transform: uppercase;
     list-style-type: none;
     display: flex;
     color: white;
+    text-align: right;
     justify-content: space-between;
-
+    font-weight: 700;
 }
 
 .navbar ul li {
     padding: 0 5px;
     margin: 0 5px;
-    text-align: right;
     font-size: 14px;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
 }
 
 /* Splash */
@@ -62,20 +68,23 @@ nav {
 .splash {
     color: white;
     text-align; center; 
-    margin-bottom: 150px;
+    margin-bottom: 30px;
     justify-content: center;
 }
 .splash h1 {
         font-size: 75px;
         border: 2px solid 5px;
         text-align: center;
+        
     }
 .splash h2 {
         font-size: 40px;
         border: 2px solid 5px;
+        margin-top: 150px;
     }
 .splash button {
         font-size: 40px;
+        margin-bottom: 150px;
     }
 .splash-inside {
     translate: transofm (-50%,50%);
@@ -88,9 +97,10 @@ nav {
     background-color:#fed136;
     border-radius: 5px;
     border: 2px solid 5px;
-    padding: 15px 25px;
+    padding: 20px 35px;
     font-size: 16px;
-    border: none;   
+    border: none;
+    font-weight: 700;   
 }
 
 .splash button:hover {
@@ -107,13 +117,28 @@ nav {
     flex-wrap: wrap;
     background-color: white;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 50px ;
 }
 
-.services h2 {
+.services h2, .portfolio h2 {
     text-align: center;
-    
+    margin: auto;
+    font-size: 40px;
+    margin-top: 30px;
 }
+
+.services p {
+    color: gray;;
+    margin-bottom: 35px;
+}
+
+.service-image img {
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
 
 /* Portfolio */
 
@@ -126,6 +151,10 @@ nav {
     margin: 0 auto;
 }
 
+.portfolio-image {
+    background-color: white;
+}
+
 /* Footer */
 
 footer {
@@ -133,4 +162,25 @@ footer {
     background-color: white;
     text-align: center;
 }
+
+.footer-list{
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
 }
+
+/* Font Awesome */ 
+
+.footer-list i {
+    color: black;
+    background: white;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.fa-twitter, .fa-playstation {
+    color:yellow;
+    background: yellow;
+    border-radius: 50%;
+    margin: 0 10px;
+} 
