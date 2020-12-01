@@ -11,6 +11,7 @@ body {
   box-sizing: border-box;
 }
 
+
 /* Navigation */
 
 header {
@@ -53,7 +54,7 @@ nav {
 }
 
 .navbar ul li {
-    padding: 0 5px;
+    padding: 0 8px;
     margin: 0 5px;
     font-size: 14px;
     justify-content: space-between;
@@ -149,11 +150,24 @@ nav {
     flex-wrap: wrap;
     background-color: #f7f7f7;
     text-align: center;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
 .portfolio-image,  {
     background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.portfolio-description  {
+    margin-bottom : 40px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 84%;
+    height: 100%;
 }
 
 /* Footer */
@@ -170,25 +184,23 @@ footer {
     display: flex;
     text-align: left;
     flex-direction: row;
-    justify-content: center;    
+    justify-content: left;    
 }
 
 /* Font Awesome */ 
 
 .footer-list i {
     color: black;
-    border-radius: 50%;
-    padding: 10px;
-    text-align: right;
+    padding-left: 10px;
     margin-left: auto;
     justify-content: space-between;
+}
+
+.footer-list li {
+    padding-left: 15px;
 }
 
 .footer-list p {
     margin-right: 30px;
     padding-right: 30px;
-}
-
-.fa-twitter-square {
-    color: yellow;
 }
