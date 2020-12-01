@@ -7,7 +7,7 @@ body {
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 /* Navigation */
@@ -98,13 +98,39 @@ nav {
     border: black;
 }
 
-/* Portfolio */
 
-.portfolio {
+/* Services */
+
+.services, footer {
     max-width: 1424px;
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     text-align: center;
     margin: 0 auto;
+}
+
+.services h2 {
+    text-align: center;
+    
+}
+
+/* Portfolio */
+
+.portfolio {
+    max-width: 1424px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    background-color: white;
+    text-align: center;
+}
 }
