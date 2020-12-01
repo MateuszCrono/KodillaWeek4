@@ -130,6 +130,7 @@ nav {
 .services p {
     color: gray;;
     margin-bottom: 35px;
+    text-align: center;
 }
 
 .service-image img {
@@ -151,7 +152,7 @@ nav {
     margin: 0 auto;
 }
 
-.portfolio-image {
+.portfolio-image,  {
     background-color: white;
 }
 
@@ -161,26 +162,33 @@ footer {
     display: block;
     background-color: white;
     text-align: center;
+
 }
 
 .footer-list{
     list-style-type: none;
     display: flex;
-    margin: 0 auto;
+    text-align: left;
+    flex-direction: row;
+    justify-content: center;    
 }
 
 /* Font Awesome */ 
 
 .footer-list i {
     color: black;
-    background: white;
     border-radius: 50%;
-    margin: 0 10px;
+    padding: 10px;
+    text-align: right;
+    margin-left: auto;
+    justify-content: space-between;
 }
 
-.fa-twitter, .fa-playstation {
-    color:yellow;
-    background: yellow;
-    border-radius: 50%;
-    margin: 0 10px;
-} 
+.footer-list p {
+    margin-right: 30px;
+    padding-right: 30px;
+}
+
+.fa-twitter-square {
+    color: yellow;
+}
